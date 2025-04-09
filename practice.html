@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Практичні завдання з веб-дизайну та UX/UI - інтерактивні вправи для закріплення знань українською мовою">
+    <title>Практика | Вступ до веб-дизайну та основи UX/UI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/practice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">WebDesign<span class="accent">UA</span></span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="theory.html">Теорія</a></li>
+                    <li><a href="examples.html">Приклади</a></li>
+                    <li><a href="practice.html" class="active">Практика</a></li>
+                    <li><a href="resources.html">Ресурси</a></li>
+                    <li><a href="glossary.html">Глосарій</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Практичні завдання</h1>
+                <p class="page-description">Закріпіть отримані знання через інтерактивні вправи та проекти різного рівня складності</p>
+            </div>
+        </section>
+
+        <section class="practice-content">
+            <div class="container">
+                <div class="practice-filter">
+                    <h2>Вправи та завдання</h2>
+                    <div class="difficulty-selector">
+                        <span>Рівень складності:</span>
+                        <div class="difficulty-buttons">
+                            <button class="difficulty-btn active" data-difficulty="all">Всі</button>
+                            <button class="difficulty-btn" data-difficulty="beginner">Початковий</button>
+                            <button class="difficulty-btn" data-difficulty="intermediate">Середній</button>
+                            <button class="difficulty-btn" data-difficulty="advanced">Просунутий</button>
+                        </div>
+                    </div>
+                    <div class="category-selector">
+                        <span>Категорія:</span>
+                        <div class="category-buttons">
+                            <button class="category-btn active" data-category="all">Всі</button>
+                            <button class="category-btn" data-category="web-design">Веб-дизайн</button>
+                            <button class="category-btn" data-category="ux">UX дизайн</button>
+                            <button class="category-btn" data-category="ui">UI дизайн</button>
+                            <button class="category-btn" data-category="responsive">Адаптивний дизайн</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="practice-grid">
+                    <!-- Завдання 1 -->
+                    <div class="practice-card" data-difficulty="beginner" data-category="web-design">
+                        <div class="practice-header">
+                            <div class="practice-difficulty beginner">
+                                <span>Початковий</span>
+                            </div>
+                            <div class="practice-category">
+                                <span>Веб-дизайн</span>
+                            </div>
+                        </div>
+                        <div class="practice-content">
+                            <h3>Аналіз кольорової схеми</h3>
+                            <p>Проаналізуйте кольорову схему популярного веб-сайту та створіть власну гармонійну палітру для навчального проекту.</p>
+                            <div class="practice-actions">
+                                <a href="#task1" class="btn btn-primary">Почати</a>
+                                <span class="practice-time"><i class="fas fa-clock"></i> 30 хв</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Завдання 2 -->
+                    <div class="practice-card" data-difficulty="intermediate" data-category="ux">
+                        <div class="practice-header">
+                            <div class="practice-difficulty intermediate">
+                                <span>Середній</span>
+                            </div>
+                            <div class="practice-category">
+                                <span>UX дизайн</span>
+                            </div>
+                        </div>
+                        <div class="practice-content">
+                            <h3>Створення користувацького шляху</h3>
+                            <p>Розробіть користувацький шлях (user journey) для процесу онлайн-покупки в інтернет-магазині.</p>
+                            <div class="practice-actions">
+                                <a href="#task2" class="btn btn-primary">Почати</a>
+                                <span class="practice-time"><i class="fas fa-clock"></i> 45 хв</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Завдання 3 -->
+                    <div class="practice-card" data-difficulty="beginner" data-category="ui">
+                        <div class="practice-header">
+                            <div class="practice-difficulty beginner">
+                                <span>Початковий</span>
+                            </div>
+                            <div class="practice-category">
+                                <span>UI дизайн</span>
+                            </div>
+                        </div>
+                        <div class="practice-content">
+                            <h3>Дизайн кнопок</h3>
+                            <p>Створіть набір кнопок різних станів (звичайний, при наведенні, активний, неактивний) для веб-інтерфейсу.</p>
+                            <div class="practice-actions">
+                                <a href="#task3" class="btn btn-primary">Почати</a>
+                                <span class="practice-time"><i class="fas fa-clock"></i> 20 хв</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Завдання 4 -->
+                    <div class="practice-card" data-difficulty="advanced" data-category="responsive">
+                        <div class="practice-header">
+                            <div class="practice-difficulty advanced">
+                                <span>Просунутий</span>
+                            </div>
+                            <div class="practice-category">
+                                <span>Адаптивний дизайн</span>
+                            </div>
+                        </div>
+                        <div class="practice-content">
+                            <h3>Адаптивний макет сторінки</h3>
+                            <p>Розробіть адаптивний макет головної сторінки веб-сайту для трьох розмірів екрану: мобільний, планшет і десктоп.</p>
+                            <div class="practice-actions">
+                                <a href="#task4" class="btn btn-primary">Почати</a>
+                                <span class="practice-time"><i class="fas fa-clock"></i> 60 хв</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Завдання 5 -->
+                    <div class="practice-card" data-difficulty="intermediate" data-category="web-design">
+                        <div class="practice-header">
+                            <div class="practice-difficulty intermediate">
+                                <span>Середній</span>
+                            </div>
+                            <div class="practice-category">
+                                <span>Веб-дизайн</span>
+                            </div>
+                        </div>
+                        <div class="practice-content">
+                            <h3>Типографіка веб-сайту</h3>
+                            <p>Створіть типографічну систему для веб-сайту, включаючи вибір шрифтів, розмірів та стилів для різних елементів.</p>
+                            <div class="practice-actions">
+                                <a href="#task5" class="btn btn-primary">Почати</a>
+                                <span class="practice-time"><i class="fas fa-clock"></i> 40 хв</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Завдання 6 -->
+                    <div class="practice-card" data-difficulty="advanced" data-category="ux ui">
+                        <div class="practice-header">
+                            <div class="practice-difficulty advanced">
+                                <span>Просунутий</span>
+                            </div>
+                            <div class="practice-category">
+                                <span>UX/UI дизайн</span>
+                            </div>
+                        </div>
+                        <div class="practice-content">
+                            <h3>Редизайн інтерфейсу</h3>
+                            <p>Проведіть аналіз та редизайн інтерфейсу існуючого веб-сервісу для покращення користувацького досвіду.</p>
+                            <div class="practice-actions">
+                                <a href="#task6" class="btn btn-primary">Почати</a>
+                                <span class="practice-time"><i class="fas fa-clock"></i> 90 хв</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interactive-section">
+                    <h2>Інтерактивний редактор коду</h2>
+                    <p>Спробуйте свої навички HTML та CSS прямо в браузері. Експериментуйте з кодом та спостерігайте за результатами в реальному часі.</p>
+                    
+                    <div class="code-editor">
+                        <div class="editor-tabs">
+                            <button class="editor-tab active" data-tab="html">HTML</button>
+                            <button class="editor-tab" data-tab="css">CSS</button>
+                            <button class="editor-tab" data-tab="result">Результат</button>
+                        </div>
+                        <div class="editor-content">
+                            <div class="editor-pane active" id="html-editor">
+                                <textarea id="html-code" placeholder="Введіть HTML код тут..."><!DOCTYPE html>
+<html>
+<head>
+    <title>Мій перший веб-сайт</title>
+</head>
+<body>
+    <h1>Привіт, світ!</h1>
+    <p>Це мій перший веб-сайт.</p>
+    <button>Натисни мене</button>
+</body>
+</html></textarea>
+                            </div>
+                            <div class="editor-pane" id="css-editor">
+                                <textarea id="css-code" placeholder="Введіть CSS код тут...">body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #4361ee;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #4361ee;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a56d4;
+}</textarea>
+                            </div>
+                            <div class="editor-pane" id="result-pane">
+                                <iframe id="result-frame"></iframe>
+                            </div>
+                        </div>
+                        <div class="editor-controls">
+                            <button id="run-code" class="btn btn-primary">Запустити код</button>
+                            <button id="reset-code" class="btn btn-secondary">Скинути</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Модальні вікна з завданнями -->
+        <div class="task-modals">
+            <!-- Модальне вікно для завдання 1 -->
+            <div id="task1" class="task-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Аналіз кольорової схеми</h2>
+                        <button class="modal-close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="task-description">
+                            <h3>Опис завдання</h3>
+                            <p>Кольорова схема є одним з найважливіших елементів веб-дизайну, який впливає на сприйняття сайту користувачами та передає настрій і характер бренду.</p>
+                            
+                            <h3>Мета</h3>
+                            <p>Навчитися аналізувати кольорові схеми існуючих веб-сайтів та створювати власні гармонійні палітри для веб-проектів.</p>
+                            
+                            <h3>Інструкції</h3>
+                            <ol>
+                                <li>Оберіть популярний веб-сайт для аналізу (наприклад, Apple, Airbnb, Spotify).</li>
+                                <li>Визначте основні кольори, які використовуються на сайті (зазвичай 3-5 кольорів).</li>
+                                <li>Запишіть HEX-коди цих кольорів.</li>
+                                <li>Проаналізуйте, як ці кольори взаємодіють між собою та яку роль вони відіграють у дизайні (основний колір, акцентний, фоновий тощо).</li>
+                                <li>Створіть власну кольорову палітру для навчального проекту (наприклад, блогу, інтернет-магазину або портфоліо).</li>
+                                <li>Обґрунтуйте свій вибір кольорів та поясніть, як вони відповідають цілям та аудиторії вашого проекту.</li>
+                            </ol>
+                            
+                            <h3>Корисні інструменти</h3>
+                            <ul>
+                                <li><a href="https://coolors.co/" target="_blank">Coolors</a> - генератор кольорових схем</li>
+                                <li><a href="https://color.adobe.com/" target="_blank">Adobe Color</a> - інструмент для створення кольорових палітр</li>
+                                <li><a href="https://www.colorzilla.com/" target="_blank">ColorZilla</a> - розширення для браузера, яке дозволяє отримати колір з будь-якого елемента на веб-сторінці</li>
+                            </ul>
+                            
+                            <div class="task-tips">
+                                <h3>Поради</h3>
+                                <ul>
+                                    <li>Використовуйте правило 60-30-10: 60% основного кольору, 30% вторинного та 10% акцентного.</li>
+                                    <li>Враховуйте психологію кольорів при виборі палітри для свого проекту.</li>
+                                    <li>Перевірте контрастність кольорів для забезпечення доступності вашого дизайну.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="task-submission">
+                            <h3>Завантаження результату</h3>
+                            <p>Після завершення завдання, завантажте зображення вашої кольорової палітри та короткий опис.</p>
+                            <form class="submission-form">
+                                <div class="form-group">
+                                    <label for="task1-file">Файл з результатом:</label>
+                                    <input type="file" id="task1-file" accept="image/*">
+                                </div>
+                                <div class="form-group">
+                                    <label for="task1-description">Опис вашої кольорової палітри:</label>
+                                    <textarea id="task1-description" rows="5" placeholder="Опишіть вашу кольорову палітру та обґрунтуйте вибір кольорів..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модальне вікно для завдання 2 -->
+            <div id="task2" class="task-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Створення користувацького шляху</h2>
+                        <button class="modal-close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="task-description">
+                            <h3>Опис завдання</h3>
+                            <p>Користувацький шлях (User Journey) - це візуальне представлення послідовності кроків, які проходить користувач при взаємодії з продуктом для досягнення певної мети. Це важливий інструмент UX дизайну, який допомагає зрозуміти досвід користувача та виявити можливі проблеми.</p>
+                            
+                            <h3>Мета</h3>
+                            <p>Навчитися створювати користувацькі шляхи для аналізу та покращення користувацького досвіду в цифрових продуктах.</p>
+                            
+                            <h3>Інструкції</h3>
+                            <ol>
+                                <li>Оберіть процес онлайн-покупки в будь-якому інтернет-магазині (наприклад, одягу, електроніки, продуктів).</li>
+                                <li>Створіть персону (типового користувача) для вашого сценарію.</li>
+                                <li>Визначте мету користувача (наприклад, купити новий смартфон).</li>
+                                <li>Складіть список всіх кроків, які користувач повинен пройти для досягнення мети (від пошуку товару до завершення покупки).</li>
+                                <li>Для кожного кроку визначте:</li>
+                                <ul>
+                                    <li>Дії користувача</li>
+                                    <li>Думки та почуття користувача</li>
+                                    <li>Можливі проблеми або перешкоди</li>
+                                    <li>Можливості для покращення</li>
+                                </ul>
+                                <li>Створіть візуальну карту користувацького шляху, використовуючи будь-який інструмент для дизайну або навіть папір та олівець.</li>
+                                <li>Запропонуйте рекомендації для покращення користувацького досвіду на основі вашого аналізу.</li>
+                            </ol>
+                            
+                            <h3>Корисні інструменти</h3>
+                            <ul>
+                                <li><a href="https://www.figma.com/" target="_blank">Figma</a> - інструмент для дизайну з шаблонами для створення користувацьких шляхів</li>
+                                <li><a href="https://miro.com/" target="_blank">Miro</a> - онлайн-дошка для спільної роботи</li>
+                                <li><a href="https://www.lucidchart.com/" target="_blank">Lucidchart</a> - інструмент для створення діаграм</li>
+                            </ul>
+                            
+                            <div class="task-tips">
+                                <h3>Поради</h3>
+                                <ul>
+                                    <li>Будьте детальними у описі кожного кроку користувацького шляху.</li>
+                                    <li>Враховуйте емоційний стан користувача на кожному етапі.</li>
+                                    <li>Зверніть увагу на потенційні точки болю та моменти, коли користувач може покинути процес.</li>
+                                    <li>Подумайте про різні сценарії та альтернативні шляхи.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="task-submission">
+                            <h3>Завантаження результату</h3>
+                            <p>Після завершення завдання, завантажте зображення вашої карти користувацького шляху та короткий опис.</p>
+                            <form class="submission-form">
+                                <div class="form-group">
+                                    <label for="task2-file">Файл з результатом:</label>
+                                    <input type="file" id="task2-file" accept="image/*,application/pdf">
+                                </div>
+                                <div class="form-group">
+                                    <label for="task2-description">Опис користувацького шляху та рекомендації:</label>
+                                    <textarea id="task2-description" rows="5" placeholder="Опишіть створений користувацький шлях та ваші рекомендації для покращення..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модальні вікна для інших завдань будуть додані аналогічно -->
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">WebDesign<span class="accent">UA</span></span>
+                    <p>Інтерактивний освітній ресурс з веб-дизайну та UX/UI українською мовою</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="theory.html">Теорія</a></li>
+                        <li><a href="examples.html">Приклади</a></li>
+                        <li><a href="practice.html">Практика</a></li>
+                        <li><a href="resources.html">Ресурси</a></li>
+                        <li><a href="glossary.html">Глосарій</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Зв'язок</h4>
+                    <p>Маєте запитання чи пропозиції? Зв'яжіться з нами:</p>
+                    <a href="mailto:contact@webdesignua.com">contact@webdesignua.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 WebDesignUA. Всі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/practice.js"></script>
+</body>
+</html>

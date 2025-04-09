@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Приклади веб-дизайну та UX/UI рішень - аналіз реальних проектів українською мовою">
+    <title>Приклади | Вступ до веб-дизайну та основи UX/UI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/examples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">WebDesign<span class="accent">UA</span></span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="theory.html">Теорія</a></li>
+                    <li><a href="examples.html" class="active">Приклади</a></li>
+                    <li><a href="practice.html">Практика</a></li>
+                    <li><a href="resources.html">Ресурси</a></li>
+                    <li><a href="glossary.html">Глосарій</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Приклади веб-дизайну та UX/UI</h1>
+                <p class="page-description">Аналіз реальних проектів для кращого розуміння принципів та практик веб-дизайну</p>
+            </div>
+        </section>
+
+        <section class="examples-content">
+            <div class="container">
+                <div class="examples-filter">
+                    <h2>Галерея прикладів</h2>
+                    <div class="filter-controls">
+                        <button class="filter-btn active" data-filter="all">Всі приклади</button>
+                        <button class="filter-btn" data-filter="web-design">Веб-дизайн</button>
+                        <button class="filter-btn" data-filter="ux">UX дизайн</button>
+                        <button class="filter-btn" data-filter="ui">UI дизайн</button>
+                        <button class="filter-btn" data-filter="responsive">Адаптивний дизайн</button>
+                    </div>
+                </div>
+
+                <div class="examples-grid">
+                    <!-- Приклад 1 -->
+                    <div class="example-card" data-category="web-design ux">
+                        <div class="example-image">
+                            <img src="images/examples/example1.svg" alt="Мінімалістичний дизайн сайту">
+                            <div class="example-overlay">
+                                <a href="#example1" class="btn btn-primary example-view-btn">Переглянути аналіз</a>
+                            </div>
+                        </div>
+                        <div class="example-info">
+                            <h3>Мінімалістичний дизайн</h3>
+                            <p>Приклад сучасного мінімалістичного дизайну з фокусом на контент</p>
+                            <div class="example-tags">
+                                <span class="tag">Веб-дизайн</span>
+                                <span class="tag">UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 2 -->
+                    <div class="example-card" data-category="ui ux">
+                        <div class="example-image">
+                            <img src="images/examples/example2.svg" alt="Дизайн мобільного додатку">
+                            <div class="example-overlay">
+                                <a href="#example2" class="btn btn-primary example-view-btn">Переглянути аналіз</a>
+                            </div>
+                        </div>
+                        <div class="example-info">
+                            <h3>Інтерфейс мобільного додатку</h3>
+                            <p>Аналіз інтерфейсу користувача та взаємодії в мобільному додатку</p>
+                            <div class="example-tags">
+                                <span class="tag">UI</span>
+                                <span class="tag">UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 3 -->
+                    <div class="example-card" data-category="responsive web-design">
+                        <div class="example-image">
+                            <img src="images/examples/example3.svg" alt="Адаптивний дизайн сайту">
+                            <div class="example-overlay">
+                                <a href="#example3" class="btn btn-primary example-view-btn">Переглянути аналіз</a>
+                            </div>
+                        </div>
+                        <div class="example-info">
+                            <h3>Адаптивний дизайн</h3>
+                            <p>Приклад адаптивного дизайну для різних пристроїв</p>
+                            <div class="example-tags">
+                                <span class="tag">Адаптивний дизайн</span>
+                                <span class="tag">Веб-дизайн</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 4 -->
+                    <div class="example-card" data-category="ui">
+                        <div class="example-image">
+                            <img src="images/examples/example4.svg" alt="Дизайн-система">
+                            <div class="example-overlay">
+                                <a href="#example4" class="btn btn-primary example-view-btn">Переглянути аналіз</a>
+                            </div>
+                        </div>
+                        <div class="example-info">
+                            <h3>Дизайн-система</h3>
+                            <p>Аналіз компонентів та принципів дизайн-системи</p>
+                            <div class="example-tags">
+                                <span class="tag">UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 5 -->
+                    <div class="example-card" data-category="ux">
+                        <div class="example-image">
+                            <img src="images/examples/example5.svg" alt="Користувацький шлях">
+                            <div class="example-overlay">
+                                <a href="#example5" class="btn btn-primary example-view-btn">Переглянути аналіз</a>
+                            </div>
+                        </div>
+                        <div class="example-info">
+                            <h3>Користувацький шлях</h3>
+                            <p>Аналіз користувацького шляху та досвіду в інтернет-магазині</p>
+                            <div class="example-tags">
+                                <span class="tag">UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 6 -->
+                    <div class="example-card" data-category="responsive ui">
+                        <div class="example-image">
+                            <img src="images/examples/example6.svg" alt="Адаптивні компоненти інтерфейсу">
+                            <div class="example-overlay">
+                                <a href="#example6" class="btn btn-primary example-view-btn">Переглянути аналіз</a>
+                            </div>
+                        </div>
+                        <div class="example-info">
+                            <h3>Адаптивні компоненти</h3>
+                            <p>Приклади адаптивних компонентів інтерфейсу для різних пристроїв</p>
+                            <div class="example-tags">
+                                <span class="tag">Адаптивний дизайн</span>
+                                <span class="tag">UI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Модальні вікна з детальним аналізом прикладів -->
+        <div class="example-modals">
+            <!-- Модальне вікно для прикладу 1 -->
+            <div id="example1" class="example-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Мінімалістичний дизайн</h2>
+                        <button class="modal-close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="example-showcase">
+                            <img src="images/examples/example1-full.svg" alt="Мінімалістичний дизайн сайту">
+                        </div>
+                        <div class="example-analysis">
+                            <h3>Опис проекту</h3>
+                            <p>Цей веб-сайт демонструє принципи мінімалістичного дизайну, де основна увага приділяється контенту та функціональності. Сайт використовує багато білого простору, чітку типографіку та обмежену кольорову палітру.</p>
+                            
+                            <h3>Ключові особливості дизайну</h3>
+                            <ul>
+                                <li><strong>Білий простір:</strong> Значна кількість білого простору допомагає виділити важливі елементи та покращує читабельність.</li>
+                                <li><strong>Типографіка:</strong> Використання контрастних шрифтів для заголовків та основного тексту створює чітку ієрархію.</li>
+                                <li><strong>Кольорова палітра:</strong> Обмежена кольорова палітра з одним акцентним кольором для виділення важливих елементів.</li>
+                                <li><strong>Сітка:</strong> Чітка сіткова структура забезпечує візуальний порядок та баланс.</li>
+                            </ul>
+                            
+                            <h3>UX аспекти</h3>
+                            <p>Мінімалістичний дизайн покращує користувацький досвід завдяки:</p>
+                            <ul>
+                                <li>Швидкому завантаженню сторінки</li>
+                                <li>Легкій навігації та зрозумілій структурі</li>
+                                <li>Фокусу на контенті без відволікаючих елементів</li>
+                                <li>Чіткій візуальній ієрархії, яка направляє увагу користувача</li>
+                            </ul>
+                            
+                            <div class="example-tips">
+                                <h3>Поради для застосування</h3>
+                                <ul>
+                                    <li>Використовуйте достатньо білого простору для розділення елементів</li>
+                                    <li>Обмежте кольорову палітру до 2-3 основних кольорів</li>
+                                    <li>Виберіть один акцентний колір для виділення важливих елементів</li>
+                                    <li>Використовуйте контрастну типографіку для створення ієрархії</li>
+                                    <li>Видаліть всі непотрібні елементи, які не сприяють досягненню цілей сайту</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модальне вікно для прикладу 2 -->
+            <div id="example2" class="example-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Інтерфейс мобільного додатку</h2>
+                        <button class="modal-close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="example-showcase">
+                            <img src="images/examples/example2-full.svg" alt="Дизайн мобільного додатку">
+                        </div>
+                        <div class="example-analysis">
+                            <h3>Опис проекту</h3>
+                            <p>Цей мобільний додаток демонструє сучасні принципи UI/UX дизайну для мобільних платформ. Інтерфейс розроблений з урахуванням зручності використання однією рукою та швидкого доступу до основних функцій.</p>
+                            
+                            <h3>Ключові особливості інтерфейсу</h3>
+                            <ul>
+                                <li><strong>Навігація:</strong> Нижня панель навігації забезпечує легкий доступ до основних розділів додатку.</li>
+                                <li><strong>Компоненти:</strong> Використання стандартних компонентів iOS/Android для забезпечення знайомого досвіду.</li>
+                                <li><strong>Візуальна ієрархія:</strong> Чітке виділення основних дій та інформації.</li>
+                                <li><strong>Мікровзаємодії:</strong> Анімації та відгуки на дії користувача покращують досвід використання.</li>
+                            </ul>
+                            
+                            <h3>UX аспекти</h3>
+                            <p>Дизайн мобільного додатку враховує такі аспекти користувацького досвіду:</p>
+                            <ul>
+                                <li>Зручність використання однією рукою</li>
+                                <li>Швидкий доступ до найчастіше використовуваних функцій</li>
+                                <li>Мінімальна кількість кроків для виконання основних завдань</li>
+                                <li>Візуальний відгук на дії користувача</li>
+                                <li>Адаптація до різних розмірів екранів</li>
+                            </ul>
+                            
+                            <div class="example-tips">
+                                <h3>Поради для застосування</h3>
+                                <ul>
+                                    <li>Розміщуйте важливі елементи керування в зоні досяжності великого пальця</li>
+                                    <li>Використовуйте стандартні компоненти платформи для забезпечення знайомого досвіду</li>
+                                    <li>Забезпечте достатній розмір інтерактивних елементів (мінімум 44×44 пікселі)</li>
+                                    <li>Додайте візуальний відгук на всі дії користувача</li>
+                                    <li>Тестуйте інтерфейс на різних розмірах екранів</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модальне вікно для прикладу 3 -->
+            <div id="example3" class="example-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Адаптивний дизайн</h2>
+                        <button class="modal-close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="example-showcase">
+                            <img src="images/examples/example3-full.svg" alt="Адаптивний дизайн сайту">
+                        </div>
+                        <div class="example-analysis">
+                            <h3>Опис проекту</h3>
+                            <p>Цей приклад демонструє адаптивний дизайн веб-сайту, який оптимізований для різних пристроїв: від мобільних телефонів до великих десктопних моніторів. Дизайн забезпечує оптимальний користувацький досвід незалежно від розміру екрану.</p>
+                            
+                            <h3>Ключові особливості адаптивного дизайну</h3>
+                            <ul>
+                                <li><strong>Гнучка сітка:</strong> Використання відносних одиниць вимірювання та гнучкої сітки для адаптації контенту.</li>
+                                <li><strong>Медіа-запити:</strong> Застосування CSS медіа-запитів для зміни макету залежно від розміру екрану.</li>
+                                <li><strong>Гнучкі зображення:</strong> Зображення, які масштабуються відповідно до розміру контейнера.</li>
+                                <li><strong>Адаптивна навігація:</strong> Меню, яке трансформується в мобільну версію на малих екранах.</li>
+                            </ul>
+                            
+                            <h3>Підхід Mobile-First</h3>
+                            <p>Дизайн розроблений за принципом Mobile-First, що означає:</p>
+                            <ul>
+                                <li>Спочатку розробляється версія для мобільних пристроїв</li>
+                                <li>Поступово додаються функції та елементи для більших екранів</li>
+                                <li>Оптимізація продуктивності для мобільних пристроїв</li>
+                                <li>Фокус на найважливішому контенті та функціях</li>
+                            </ul>
+                            
+                            <div class="example-tips">
+                                <h3>Поради для застосування</h3>
+                                <ul>
+                                    <li>Використовуйте відносні одиниці вимірювання (%, em, rem) замість абсолютних (px)</li>
+                                    <li>Застосовуйте підхід Mobile-First при розробці CSS</li>
+                                    <li>Тестуйте дизайн на різних пристроях та розмірах екранів</li>
+                                    <li>Використовуйте стандартні контрольні точки для медіа-запитів (576px, 768px, 992px, 1200px)</li>
+                                    <li>Забезпечте зручність використання на сенсорних екранах</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модальні вікна для інших прикладів будуть додані аналогічно -->
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">WebDesign<span class="accent">UA</span></span>
+                    <p>Інтерактивний освітній ресурс з веб-дизайну та UX/UI українською мовою</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="theory.html">Теорія</a></li>
+                        <li><a href="examples.html">Приклади</a></li>
+                        <li><a href="practice.html">Практика</a></li>
+                        <li><a href="resources.html">Ресурси</a></li>
+                        <li><a href="glossary.html">Глосарій</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Зв'язок</h4>
+                    <p>Маєте запитання чи пропозиції? Зв'яжіться з нами:</p>
+                    <a href="mailto:contact@webdesignua.com">contact@webdesignua.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 WebDesignUA. Всі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/examples.js"></script>
+</body>
+</html>

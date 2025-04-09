@@ -1,0 +1,323 @@
+/* Стилі для сторінки прикладів */
+
+/* Заголовок сторінки */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.page-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Контент сторінки */
+.examples-content {
+    padding: 60px 0;
+    background-color: var(--gray-100);
+}
+
+/* Фільтри */
+.examples-filter {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.filter-btn {
+    background-color: white;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    padding: 8px 16px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--gray-700);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--gray-200);
+    color: var(--primary-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Сітка прикладів */
+.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Картка прикладу */
+.example-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.example-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.example-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.example-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.example-card:hover .example-image img {
+    transform: scale(1.05);
+}
+
+.example-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.example-card:hover .example-overlay {
+    opacity: 1;
+}
+
+.example-view-btn {
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.example-card:hover .example-view-btn {
+    transform: translateY(0);
+}
+
+.example-info {
+    padding: 20px;
+}
+
+.example-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.example-info p {
+    color: var(--gray-700);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.example-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: var(--gray-200);
+    color: var(--gray-700);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Модальні вікна */
+.example-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.example-modal:target {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.3s ease;
+    position: relative;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.modal-header h2::after {
+    display: none;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.example-showcase {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.example-showcase img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.example-analysis h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--primary-dark);
+}
+
+.example-analysis p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.example-analysis ul {
+    margin-bottom: 20px;
+}
+
+.example-analysis li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.example-tips {
+    background-color: var(--gray-100);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-top: 30px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.example-tips h3 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 0;
+    }
+    
+    .examples-content {
+        padding: 40px 0;
+    }
+    
+    .examples-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    
+    .modal-content {
+        margin: 20px auto;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .filter-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .examples-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .example-image {
+        height: 180px;
+    }
+}
