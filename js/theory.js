@@ -1,31 +1,15 @@
 // JavaScript для сторінки теорії
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Змінні для відстеження прогресу
-    let completedTopics = JSON.parse(localStorage.getItem('completedTopics')) || [];
-    let currentProgress = 0;
-    
-    // Елементи інтерфейсу
-    const moduleToggles = document.querySelectorAll('.btn-toggle-module');
-    const completeButtons = document.querySelectorAll('.btn-check-complete');
-    const progressBar = document.querySelector('.progress');
-    const progressText = document.querySelector('.progress-tracker p');
-    const moduleLinks = document.querySelectorAll('.module-list > li > a');
-    const topicLinks = document.querySelectorAll('.topic-list a');
-    
-    // Ініціалізація прогресу
-    updateProgress();
-    highlightCompletedTopics();
-    
-    // Обробники подій для згортання/розгортання модулів
-    moduleToggles.forEach(toggle => {
-        toggle.addEventListener('click', function() {
-            const moduleSection = this.closest('.module-section');
-            const moduleContent = moduleSection.querySelector('.module-content');
-            const icon = this.querySelector('i');
-            
+    // Обробка кліків на кнопки розгортання/згортання модулів
+    const toggleButtons = document.querySelectorAll('.btn-toggle-module');
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const moduleContent = this.closest('.module-section').querySelector('.module-content');
             moduleContent.classList.toggle('collapsed');
             
+            // Зміна іконки
+            const icon = this.querySelector('i');
             if (moduleContent.classList.contains('collapsed')) {
                 icon.classList.remove('fa-chevron-up');
                 icon.classList.add('fa-chevron-down');
@@ -35,6 +19,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 icon.classList.add('fa-chevron-up');
                 this.setAttribute('aria-label', 'Згорнути модуль');
             }
+        });
+    });
+    
+    // Обробка кліків на кнопки "Позначити як прочитане"
+    const completeButtons = document.querySelectorAll('.btn-check-complete');
+    completeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            this.classList.toggle('completed');
+            if (this.classList.contains('completed')) {
+                this.textContent = 'Прочитано ✓';
+                // Тут можна додати код для збереження прогресу
+            } else {
+                this.textContent = 'Позначити як прочитане';
+            }
+        });
+    });
+    
+    // Обробка кліків на кнопку "Почати тест"
+    const quizButtons = document.querySelectorAll('.btn-start-quiz');
+    quizButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Функціонал тестування знаходиться в розробці.');
         });
     });
     

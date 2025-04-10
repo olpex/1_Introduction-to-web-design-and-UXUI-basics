@@ -84,48 +84,59 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.example-image {
+.card-header {
     position: relative;
     overflow: hidden;
-    height: 200px;
-}
-
-.example-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.example-card:hover .example-image img {
-    transform: scale(1.05);
-}
-
-.example-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    color: white;
+    transition: all 0.3s ease;
 }
 
-.example-card:hover .example-overlay {
-    opacity: 1;
-}
-
-.example-view-btn {
-    transform: translateY(20px);
+.card-icon {
+    font-size: 3rem;
+    text-align: center;
     transition: transform 0.3s ease;
 }
 
-.example-card:hover .example-view-btn {
+.example-card:hover .card-icon {
+    transform: scale(1.1);
+}
+
+.card-actions {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+}
+
+.example-card:hover .card-actions {
+    opacity: 1;
     transform: translateY(0);
+}
+
+.btn-card-action {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.btn-card-action:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
 }
 
 .example-info {
