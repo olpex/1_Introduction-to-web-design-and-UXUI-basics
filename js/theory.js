@@ -1,6 +1,14 @@
 // JavaScript для сторінки теорії
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Ініціалізація змінних для відстеження прогресу
+    let completedTopics = JSON.parse(localStorage.getItem('completedTopics')) || [];
+    const topicLinks = document.querySelectorAll('.topic-list a');
+    const moduleLinks = document.querySelectorAll('.module-list > li > a');
+    const progressBar = document.querySelector('.progress');
+    const progressText = document.querySelector('.progress-tracker p');
+    let currentProgress = 0;
+    
     // Обробка кліків на кнопки розгортання/згортання модулів
     const toggleButtons = document.querySelectorAll('.btn-toggle-module');
     toggleButtons.forEach(button => {
