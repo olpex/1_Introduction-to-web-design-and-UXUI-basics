@@ -1,0 +1,275 @@
+/* Стилі для сторінки глосарію */
+
+/* Заголовок сторінки */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.page-description {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Контент сторінки */
+.glossary-content {
+    padding: 60px 0;
+    background-color: var(--gray-100);
+}
+
+/* Пошук та алфавіт */
+.glossary-search {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+}
+
+.glossary-alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.alphabet-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-200);
+    border: none;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--gray-700);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.alphabet-btn[data-letter="all"] {
+    width: auto;
+    padding: 0 15px;
+    border-radius: 18px;
+}
+
+.alphabet-btn:hover {
+    background-color: var(--gray-300);
+    color: var(--primary-color);
+}
+
+.alphabet-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Список термінів */
+.glossary-list {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.glossary-section {
+    margin-bottom: 50px;
+}
+
+.glossary-section:last-child {
+    margin-bottom: 0;
+}
+
+.glossary-letter {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--gray-200);
+}
+
+.glossary-term {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.glossary-term:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.term-title {
+    color: var(--gray-800);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.term-title:hover {
+    color: var(--primary-color);
+}
+
+.term-title::after {
+    content: '#';
+    font-size: 1rem;
+    color: var(--gray-400);
+    margin-left: 8px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.term-title:hover::after {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+.term-content {
+    color: var(--gray-700);
+    line-height: 1.6;
+}
+
+.term-content p {
+    margin-bottom: 15px;
+}
+
+.term-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background-color: var(--gray-200);
+    color: var(--gray-700);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.term-related {
+    background-color: var(--gray-100);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-top: 15px;
+}
+
+.term-related h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--gray-700);
+}
+
+.term-related ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.term-related li {
+    margin-bottom: 5px;
+}
+
+.term-related a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.term-related a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Ефект підсвічування */
+.glossary-term.highlight {
+    animation: highlight-pulse 2s ease;
+}
+
+@keyframes highlight-pulse {
+    0% { background-color: transparent; }
+    20% { background-color: rgba(67, 97, 238, 0.1); }
+    100% { background-color: transparent; }
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 40px 0;
+    }
+    
+    .glossary-content {
+        padding: 40px 0;
+    }
+    
+    .glossary-search {
+        padding: 20px;
+    }
+    
+    .glossary-alphabet {
+        gap: 6px;
+    }
+    
+    .alphabet-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+    
+    .glossary-list {
+        padding: 20px;
+    }
+    
+    .glossary-letter {
+        font-size: 1.8rem;
+    }
+    
+    .term-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .glossary-alphabet {
+        gap: 4px;
+    }
+    
+    .alphabet-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+}
